@@ -6,4 +6,5 @@ import org.springframework.stereotype.Repository;
 
 @Repository // Informa ao Spring que esta interface atuará como um repositório de banco de dados.
 public interface AlunoRepository extends JpaRepository<Aluno, Integer> {
+	public Aluno getByCpf(String cpf);
 }
